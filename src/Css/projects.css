@@ -1,0 +1,26 @@
+.home {
+    background-color: #955fb4;
+    
+  }
+  
+  .home_pro {
+
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    flex-wrap:nowrap;
+    padding: 20px;
+  }
+  
+  .card {
+    margin: 10px; /* Add margin to cards for spacing */
+  }
+  
+  /* Mobile view adjustments */
+  @media (max-width: 480px) {
+    .home_pro {
+      flex-direction: column; /* Change layout for mobile view */
+      padding: 10px; /* Adjust padding for mobile view */
+      margin-left: 25px;
+    }
+  }
+  

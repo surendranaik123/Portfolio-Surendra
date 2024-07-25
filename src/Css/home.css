@@ -1,0 +1,370 @@
+.home-container {
+  background-color: #955fb4;
+  overflow-x: hidden;
+}
+
+.hero_main {
+  display: flex;
+  height: 85vh;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  height: 85vh; */
+}
+
+.hero_left, .hero_right {
+  /* padding: 20px;
+  flex: 1;
+  margin: 10px;
+  color: white; */
+}
+
+.card {
+  width: 18rem;
+}
+
+.hero_left {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 351px;
+  margin-top: 20px;
+}
+
+.hero_right {
+  padding: 20px;
+  margin-left: 151px; 
+  margin-top: -180px; 
+}
+.hero_right img {
+  height: 550px;
+  filter: drop-shadow(-14px 3px 4px rgba(0, 0, 0, 0.68));
+}
+.card-text {
+  font-size: 40px;
+  width: 500px;
+  margin-top: 20px;
+}
+
+.card-title {
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.home_hello {
+  display: flex;
+}
+
+.home_hello img {
+  height: 70px;
+  width: 70px;
+  margin-top: -20px;
+
+}
+
+.boxoff_down {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5), 
+              -10px -10px 15px rgba(0, 0, 0, 0.2),
+              inset 5px 5px 10px rgba(0, 0, 0, 0.3), 
+              inset -5px -5px 10px rgba(255, 255, 255, 0.1); 
+  padding: 20px;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  background-color: #321444;
+ margin-top: -125px;
+ display: flex;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 25px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ddd;
+}
+
+.Year_Experience{
+  color: white;
+  display: flex;
+  width: 150px;
+  margin-right: 40px;
+}
+.Year_Experience_Count{
+  font-size: 40px;
+
+}
+.Year_Experience_Year{
+  font-size: 20px;
+  margin-top: 9px;
+  margin-left: 10px;
+}
+.Year_Experience1{
+  color: white;
+  display: flex;
+  width: 550px;
+  margin-right: 10px;
+}
+.Year_Experience2{
+  color: white;
+
+  width: 350px;
+  margin-right: 10px;
+}
+
+.experience-icon {
+  margin-right: 30px; 
+  font-size: 2px;
+  margin-top:-10px;
+  height: 70px;
+  width: 70px;
+}
+
+
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%; /* Adjust width as needed */
+}
+
+.marquee-inner {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+.experience-icon {
+  height: 80px;
+  width: 80px;
+  margin-right: 10px; /* Space between images */
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.header{
+ 
+  width: 87%;
+}
+
+
+
+/* General styles for mobile */
+@media (max-width: 767px) and (max-width: 1023px){
+  .hero_main {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+
+  .hero_left, .hero_right {
+    margin: 0;
+    padding: 10px;
+    flex: 100%;
+  }
+
+  .hero_left {
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .hero_right {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .hero_right img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .card-text {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 25px;
+  }
+
+  .boxoff_down {
+    padding: 10px;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .Year_Experience {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .Year_Experience1, .Year_Experience2 {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .experience-icon {
+    margin-right: 10px;
+    font-size: 2px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .marquee {
+    width: 100%;
+  }
+
+  .marquee-inner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .boxoff_down {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5), 
+                -10px -10px 15px rgba(0, 0, 0, 0.2),
+                inset 5px 5px 10px rgba(0, 0, 0, 0.3), 
+                inset -5px -5px 10px rgba(255, 255, 255, 0.1); 
+    padding: 20px;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    background-color: #321444;
+   margin-top: -35px;
+   display: flex;
+  }
+  .hero_main {
+   
+    padding: 10px;
+    height: auto;
+  }
+  .header{
+    width: 100%;
+  }
+  
+  .hero_left, .hero_right {
+    margin: 0;
+    padding: 10px;
+    flex: 100%;
+  }
+
+  .hero_left {
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .hero_right {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .hero_right img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-top: -100px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .card-text {
+    font-size: 25px;
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
+
+  .boxoff_down {
+    padding: 10px;
+    height: auto;
+    flex-direction: column;
+    width: 380px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: -125px;
+   
+  }
+
+  .Year_Experience {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .Year_Experience1 {
+    width: 300px;
+    margin: 0 auto;
+margin-left: 58px;
+margin-top: -30px;
+    
+  }
+  .Year_Experience2 {
+    width: auto;
+    margin: 0 auto;
+    margin: 20px;
+  }
+
+  .Year_Experience_Year{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .Year_Experience_Count{
+  font-size: 40px;
+  margin-top: 5px;
+}
+  .experience-icon {
+    margin-right: 10px;
+    font-size: 2px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .marquee {
+    width: 100%;
+  }
+
+  .marquee-inner {
+    width: 100%;
+  }
+}
